@@ -4,8 +4,8 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class HelloController {
+class HealthController {
 
-    @GetMapping("hello")
-    fun getHello() = "Hello kitty!"
+    @GetMapping("health")
+    fun getOk() = mapOf("status" to "OK")
 }
